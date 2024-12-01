@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url(trees.webp), linear-gradient(to top, rgba(255, 0, 0, 0.2)20%,rgba(220, 217, 160, 0.3)80%), url(rocks.png);
+    background-position: right;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width:200px;
+    float: left;
+    height: 70px;
+}
+
+.titletext{
+    color: rgb(241, 53, 20);
+    font-size: 90px;
+    font-family: Impact, 'Arial Narrow Bolds', sans-serif;
+}
+
+.title1{
+    padding-top: 40px;
+}
+
+.title2{
+    padding-top: 0px;
+}
+
+.password{
+    width: 400px;
+    float: left;
+    margin-left:0px;
+    padding-top: 20px;
+}
+
+.search{
+    font-family: 'Franklin Gothic Medium';
+    text-decoration: none;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.626);
+    border: 3px solid rgb(241, 53, 20);
+    font-size: 16px;
+    padding: 7px;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 70px;
+    height: 59px;
+    background: rgb(241, 53, 20);
+    border: 2px solid rgb(241, 53, 20);
+    color: #fff;
+    font-size:30px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: rgb(44, 32, 30);
+    font-weight: bold;
+}
+
+/*
+.selection{
+    width: 400px;
+    height: 1px;
+    padding-Stop: 100px;
+}
+
+ul a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.2s ease-out;
+}
+
+ul a:hover{
+    color: rgb(241, 53, 20);
+}
+*/
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Franklin Gothic';
+    padding: 10px;
+    padding-top: 550px;
+}
