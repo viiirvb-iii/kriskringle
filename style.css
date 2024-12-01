@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: url(trees.webp), linear-gradient(to top, rgba(255, 0, 0, 0.2)20%,rgba(220, 217, 160, 0.3)80%), url(rocks.png);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.3)20%,rgba(255, 255, 255, 0.3)80%), url(border2.png);;
     background-position: right;
     background-size: cover;
     height: 109vh;
@@ -52,7 +52,7 @@
     height: 40px;
     background: rgba(0, 0, 0, 0.626);
     border: 3px solid rgb(241, 53, 20);
-    font-size: 16px;
+    font-size: 25px;
     padding: 7px;
     float: left;
     border-bottom-left-radius: 5px;
@@ -101,7 +101,9 @@ ul a:hover{
     width: 1200px;
     height: auto;
     margin: auto;
-    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    color: #010000;
     font-family: 'Franklin Gothic';
     padding: 10px;
     padding-top: 550px;
