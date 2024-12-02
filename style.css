@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.3)20%,rgba(255, 255, 255, 0.3)80%), url(border2.png);;
+    background: linear-gradient(to top, rgba(26, 27, 42, 0.6)20%,rgba(26, 27, 42, 0.7)80%), url(border3.png), rgb(26, 27, 42);
     background-position: right;
     background-size: cover;
     height: 109vh;
@@ -15,32 +15,58 @@
     width: 1200px;
     height: 75px;
     margin: auto;
+    padding-top: 80px;
 }
 
-.icon{
-    width:200px;
-    float: left;
-    height: 70px;
+.welcome{
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(143, 146, 173);
+    font-size: 55px;
 }
 
 .titletext{
-    color: rgb(241, 53, 20);
     font-size: 90px;
-    font-family: Impact, 'Arial Narrow Bolds', sans-serif;
+    font-family: Impact;
 }
 
 .title1{
-    padding-top: 40px;
+    color: rgb(255, 255, 255);
 }
 
 .title2{
-    padding-top: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.title3{
+    color: rgb(241, 53, 20);
+}
+
+.namselect{
+    width: 300px;
+    float: left;
+    padding-top: 20px;
+}
+
+.dropdown{
+    font-family: 'Franklin Gothic Medium';
+    text-decoration: none;
+    color: #fff;
+    width: 250px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.626);
+    border: 3px solid rgb(241, 53, 20);
+    font-size: 25px;
+    padding: 7px;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .password{
     width: 400px;
     float: left;
-    margin-left:0px;
     padding-top: 20px;
 }
 
@@ -71,40 +97,28 @@
 }
 
 .btn:hover{
-    background-color: #fff;
-    color: rgb(44, 32, 30);
-    font-weight: bold;
-}
-
-/*
-.selection{
-    width: 400px;
-    height: 1px;
-    padding-Stop: 100px;
-}
-
-ul a{
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Franklin Gothic Medium';
-    font-weight: bold;
-    font-size: 25px;
-    transition: 0.2s ease-out;
-}
-
-ul a:hover{
+    background-color: #3e0303;
     color: rgb(241, 53, 20);
-}
-*/
-
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    font-size: 35px;
     font-weight: bold;
-    color: #010000;
-    font-family: 'Franklin Gothic';
-    padding: 10px;
-    padding-top: 550px;
 }
+
+.btn_back{
+    width: 300px;
+    height: 80px;
+    background: rgb(241, 53, 20);
+    border: 2px solid rgb(241, 53, 20);
+    color: #fff;
+    font-size:38px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 50px;
+}
+
+.btn_back:hover{
+    background-color: #3e0303;
+    color: rgb(241, 53, 20);
+    font-weight: bold;
+}
+
