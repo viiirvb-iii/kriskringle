@@ -3,6 +3,28 @@
     <head>
         <title>VB Kris Kringle '24</title>
         <link rel="stylesheet" href="style.css">
+
+    <script language=javascript>
+        let val=null;
+        const knee_surgery=["845692", "391057", "729418", "506283", "184729", "674381", "235806", "917204", "483591", "320846"]
+
+        function set_val()
+            {
+                val=document.getElementById("tomorrow").selectedIndex-1;
+            }
+        
+        function regulate_pass()
+            {
+                let potpass=document.pass.passed.value
+                if(val!==null&&knee_surgery[val]==potpass) {
+                    window.location="answerpage.html";
+                }
+                else{
+                    window.location="incorrectpage.html";
+                }
+            }
+    </script>
+
     </head>
     <body>
         <div class="main">
@@ -11,19 +33,29 @@
                     <h2 class="title1">2024 van Beveren Christmas</h2>
                     <h2 class="title2">Kris Kringle</h2>
                 </div>
-                <div class="password">
-                    <input class="search" type="password" name="" placeholder="Enter Password">
-                    <a href="#"> <button class="btn">GO</button></a>
-                </div>
-                <!-- <div class="selection">
-                    <ul>
-                    <p><a href="#">GENERATE KRIS KRINGLE?</a></p>
-                    </ul>
-                </div> -->
                 
-            </div>
-            <div class="content">
-                <p>Hello! Use the password in the email, and enter above.</p>
+                <form name=pass>
+                    <div class="namselect">
+                        <select name="tomorrow" class="dropdown" id="tomorrow" onchange="javascript:set_val();">
+                            <option value="" disabled selected>Select Name . . . </option>
+                        <option value="0">Ariane</option>
+                        <option value="1">Emily</option>
+                        <option value="2">Emma</option>
+                        <option value="3">Helen</option>
+                        <option value="4">James</option>
+                        <option value="5">Jeannette</option>
+                        <option value="6">Luke</option>
+                        <option value="7">Richard</option>
+                        <option value="8">Ruby</option>
+                        <option value="9">Will</option>
+                            </select>
+                    </div>
+                    <div class="password">
+                        <input class="search" type="password" name="passed" placeholder="Enter Password">
+                        <input class="btn" type = button value = "GO" onclick="javascript:regulate_pass();">
+                    </div>
+                </form>
+                
             </div>
     </body>
 </html>
