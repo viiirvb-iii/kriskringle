@@ -5,20 +5,35 @@
         <link rel="stylesheet" href="style.css">
 
         <script language=javascript>
+            const kriskringees=["Ariane","Emily","Emma","Helen","James","Jeannette","Luke","Richard","Ruby","Will"]
+            function load_site(key)
+                {
+                    let params = new URLSearchParams(location.search);
+                    return params.get('data')
+                }
+
             function home()
                 {
                     window.location="index.html";
                 }
+                const link_id=[6, 9, 5, 1, 3, 0, 7, 8, 4, 2];
+            window.onload = function(){
+                var typed=load_site('data');
+                var typeface=kriskringees[typed];
+                var font_check=kriskringees[link_id[typed]]
+                document.getElementById('output').innerHTML = "Welcome "+typeface+"!";
+                document.getElementById('selectedone').innerHTML = font_check;
+                };
         </script>
         
     </head>
     <body>
         <div class="main">
             <div class="navbar">
-                <h1 class="welcome">Welcome Name!</h1>
+                <h1 class="welcome"><p id="output"></p></h1>
                 <div class="titletext">
                     <h2 class="title1">Your person for <br> Kris Kringle is</h2>
-                    <h2 class="title3">Me!!!</h2>
+                    <h2 class="title3"><p id="selectedone"></p></h2>
                 </div>
                 
                 <div class="returnn">
